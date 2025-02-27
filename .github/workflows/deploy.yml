@@ -6,14 +6,6 @@ on:
       - main 
 
 jobs:
-  test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Debug API Key (Partial)
-          env:
-            SEENODE_API_KEY: ${{ secrets.SEENODE_API_KEY }}
-          run: echo "API Key starts with: $(echo $SEENODE_API_KEY | cut -c1-5)****"
-
   deploy:
     runs-on: ubuntu-latest
 
