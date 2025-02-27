@@ -6,6 +6,12 @@ on:
       - main 
 
 jobs:
+  test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Debug secrets
+          run: echo "SEENODE_APPLICATION_ID=${{ secrets.SEENODE_APPLICATION_ID }}"
+
   deploy:
     runs-on: ubuntu-latest
 
@@ -15,8 +21,8 @@ jobs:
 
       - name: Send HTTP POST request to seenode API
         run: |
-          curl -X POST "https://api.seenode.com/v1/applications/${{ secrets.SEENODE_APPLICATION_ID }}/deployments-new" \
-            -H "Authorization: Bearer ${{ secrets.SEENODE_JWT_TOKEN }}" \
+          curl -X POST "https://api.seenode.com/v1/applications/971517/deployments-new" \
+            -H "Authorization: Bearer 82f2e2e3d6105e1a942759a52cef5a9578f6f819d70924300027634e6ac52997" \
             -H "Content-Type: application/json" \
             -d '{
                   "gitCommitSha": "${{ github.sha }}"
