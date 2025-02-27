@@ -3,7 +3,7 @@ name: Deploy to seenode
 on:
   push:
     branches:
-      - main  # Change this if needed
+      - main 
 
 jobs:
   deploy:
