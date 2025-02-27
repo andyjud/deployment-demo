@@ -12,7 +12,7 @@ jobs:
         - name: Debug API Key (Partial)
           env:
             SEENODE_API_KEY: ${{ secrets.SEENODE_API_KEY }}
-          run: echo "API Key starts with: ${SEENODE_API_KEY:0:5}****"
+          run: echo "API Key starts with: ${SEENODE_API_KEY::5}****"
 
   deploy:
     runs-on: ubuntu-latest
