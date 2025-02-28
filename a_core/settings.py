@@ -19,6 +19,7 @@ env.read_env()
 
 ENVIRONMENT = env('ENVIRONMENT', default="production")
 
+# Set to True for connecting to remote database 
 POSTGRES_LOCALLY = False
 
 BASE_DIR = Path(__file__).resolve().parent.parent
