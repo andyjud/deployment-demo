@@ -1,3 +1,12 @@
+#### Getting the files
+Download zip file, or <br>
+git clone command (need git to be installed)
+```
+git clone https://github.com/andyjud/deployment-demo.git . && rm -rf .git
+```
+<br><br><br>
+
+
 #### Demo Deployment Project
 Includes<br> 
 - django-environ for Enviornment Variables<br> 
