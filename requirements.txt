@@ -1,10 +1,10 @@
-dj-database-url
 Django
+pillow
 django-allauth
+django-htmx
 django-cleanup
 django-environ
-django-htmx
 gunicorn
-pillow
+dj-database-url
 psycopg2-binary
 whitenoise
