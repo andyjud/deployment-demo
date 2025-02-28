@@ -4,7 +4,7 @@ git clone command (need git to be installed)
 ```
 git clone https://github.com/andyjud/deployment-demo.git . && rm -rf .git
 ```
-<br><br><br>
+<br><br>
 
 
 #### Demo Deployment Project
