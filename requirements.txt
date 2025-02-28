@@ -7,4 +7,4 @@ django-htmx
 gunicorn
 pillow
 psycopg2-binary
-whitenoise==6.9.0
+whitenoise
